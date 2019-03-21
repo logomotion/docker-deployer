@@ -2,7 +2,7 @@ inspired by https://github.com/herloct/docker-deployer and https://github.com/bu
 
 ## Usage
 ```
-docker run -i --rm \                                                    
+docker run -i --rm \
     -v /local/path:/project \
     -e SSH_PRIVATE_RSA_KEY="$(< ~/.ssh/id_rsa)" -e SSH_KNOWN_HOSTS="$(< ~/.ssh/known_hosts)" \
     logomotion/deployer deploy
