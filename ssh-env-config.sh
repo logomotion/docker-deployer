@@ -104,4 +104,6 @@ decode_base64() {
   echo -e "Host *\n  LogLevel DEBUG3" >> ~/.ssh/config && \
   unset SSH_DEBUG
 
+eval "$(ssh-agent -s)"
+ssh-add
 [[ $1 ]] && exec "$@"
